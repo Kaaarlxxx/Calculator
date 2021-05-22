@@ -1,0 +1,72 @@
+h1 {
+  margin-left: 25%;
+}
+#paper {
+  position: fixed;
+  background-image: url("papier.jpg");
+  left: 25%;
+  right: 30%;
+  width: 50%;
+  height: 98%;
+}
+body {
+  background-image: url("desk.jpg");
+}
+#backgr {
+  border: solid 1px;
+  box-shadow: 10px 10px 10px grey;
+  margin-top: 50px;
+  margin-left: 25%;
+  background-color: darkgrey;
+  width: 395px;
+  padding: 10px;
+}
+#display {
+  margin-bottom: 5px;
+  border: solid 1px;
+  width: 300px;
+  height: 22px;
+}
+
+.cross {
+  background-color: red;
+  margin-left: 2px;
+  width: 50px;
+  height: 35px;
+  margin: 1px;
+}
+.cross:hover {
+  color: black;
+  background-color: white;
+  margin-left: 2px;
+  width: 50px;
+  height: 35px;
+  margin: 1px;
+}
+.extendedact {
+  color: white;
+  background-color: #2a2b2dff;
+  margin-left: 2px;
+  width: 50px;
+  height: 35px;
+  margin: 1px;
+}
+.extendedact:hover {
+  color: black;
+  background-color: white;
+  margin-left: 2px;
+  width: 50px;
+  height: 35px;
+  margin: 1px;
+}
+#history {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+}
+#clearSh {
+  position: absolute;
+  top: 96%;
+  right: 1%;
+}

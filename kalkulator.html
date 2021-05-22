@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="files/style.css" />
+    <script src="files/script.js"></script>
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div id="paper">
+      <h1>Extended Calculator by Karol</h1>
+      <div id="backgr">
+        <input type="text" id="display" onkeypress='return justNumbers(event)' />
+        <br />
+
+        <input
+          type="button"
+          class="extendedact"
+          onclick="clearDisp()"
+          value="C"
+        />
+        <input type="button" class="extendedact" onclick="remone()" value="⌫" />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="changeSign()"
+          value="+/-"
+        />
+        <input
+          type="button"
+          class="cross"
+          onclick="set(this.value)"
+          value="/"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="("
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value=")"
+        />
+        <input type="button" class="extendedact" onclick="el()" value="√" />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="7"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="8"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="9"
+        />
+        <input
+          type="button"
+          class="cross"
+          onclick="set(this.value)"
+          value="*"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="trig(this.value)"
+          value="sin"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="factor()"
+          value="x!"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="oneforx()"
+          value="1/x"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="4"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="5"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="6"
+        />
+        <input
+          type="button"
+          class="cross"
+          onclick="set(this.value)"
+          value="-"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="trig(this.value)"
+          value="cos"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="square()"
+          value="x²"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="twotox()"
+          value="2^x"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="1"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="2"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="3"
+        />
+        <input
+          type="button"
+          class="cross"
+          onclick="set(this.value)"
+          value="+"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="trig(this.value)"
+          value="tg"
+        />
+        <input type="button" class="extendedact" onclick="third()" value="x³" />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="log()"
+          value="log₁₀x"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="0"
+          style="width: 106px"
+        />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="set(this.value)"
+          value="."
+        />
+        <input type="button" class="cross" onclick="solve()" value="=" />
+        <input
+          type="button"
+          class="extendedact"
+          onclick="trig(this.value)"
+          value="ctg"
+        />
+        <input type="button" class="extendedact" onclick="lnx()" value="lnx" />
+        <input type="button" class="extendedact" onclick="etox()" value="e^x" />
+      </div>
+      <span id="history"></span>
+      <input
+        type="button"
+        id="clearSh"
+        onclick="clearSheet()"
+        value="Clear Sheet"
+      />
+    </div>
+  </body>
+</html>
